@@ -9,7 +9,7 @@
         <ul>
             @foreach ($projects as $project)
             <li>
-                <h3 class="d-inline">TTitle {{$project->title }}</h4>
+                <h3 class="d-inline">Title: {{$project->title }}</h4>
                 <h5>Type:<span class="text-danger">{{ $project->type->name }}</span></h5>
             </li>
         @endforeach
