@@ -8,11 +8,11 @@
     <div class="container">
         <ul>
             @foreach ($projects as $project)
-                <li>
-                    {{ $project->title }}
-                    <p class="text-danger">{{ $project->type->name }}</p>
-                </li>
-            @endforeach
+            <li>
+                <h3 class="d-inline">TTitle {{$project->title }}</h4>
+                <h5>Type:<span class="text-danger">{{ $project->type->name }}</span></h5>
+            </li>
+        @endforeach
         </ul>
     </div>
 
